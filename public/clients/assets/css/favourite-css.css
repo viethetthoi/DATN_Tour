@@ -1,0 +1,30 @@
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #ffffff; /* Trái tim trắng */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart.heart_favou {
+    color: red; /* Nếu yêu thích */
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+.image img {
+    width: 100%;
+    display: block;
+}

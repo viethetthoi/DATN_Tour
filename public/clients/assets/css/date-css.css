@@ -1,0 +1,47 @@
+     .date-carousel {
+            display: flex;
+            align-items: center;
+            max-width: 300px; 
+            margin: 20px 20px 0;
+            position: relative; 
+        }
+        .swiper-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .swiper-wrapper {
+            display: flex;
+            flex-wrap: nowrap; /* Ensure horizontal layout */
+        }
+        .swiper-slide {
+            color: #ffffff;
+            text-align: center;
+            font-size: 16px;
+            border: 1px solid #b7acac; /* Red border */
+            padding: 5px 10px;
+            border-radius: 5px;
+            width: auto;
+            flex-shrink: 0;
+        }
+        .swiper-button-prev, .swiper-button-next {
+            color: #ffffff;
+            background: #232C26;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute; /* Fix buttons in place */
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .swiper-button-prev {
+            left: -40px; /* Position outside the left edge */
+        }
+        .swiper-button-next {
+            right: -40px; /* Position outside the right edge */
+        }
+        .swiper-button-prev:after, .swiper-button-next:after {
+            font-size: 14px;
+        }

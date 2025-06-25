@@ -1,0 +1,129 @@
+  body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+        }
+        .container.body {
+            display: flex;
+            min-height: 100vh;
+        }
+        .main_container {
+            display: flex;
+            width: 100%;
+        }
+        /* Sidebar */
+        .left_col {
+            background: #2A3F54;
+            color: #fff;
+            width: 250px;
+            position: fixed;
+            height: 100%;
+            overflow-y: auto;
+        }
+        .left_col .profile {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .left_col .profile_img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .left_col .profile_info {
+            margin-top: 10px;
+        }
+        .nav.side-menu li a {
+            color: #fff;
+            padding: 10px 20px;
+            display: block;
+        }
+        .nav.side-menu li a:hover {
+            background: #354b60;
+        }
+        .nav.side-menu li i {
+            margin-right: 10px;
+        }
+        /* Main content */
+        .right_col {
+            margin-left: 250px;
+            padding: 20px;
+            flex: 1;
+            background: #fff;
+        }
+        .x_panel {
+            background: #fff;
+            border: 1px solid #e6e9ed;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .x_title h2 {
+            font-size: 22px;
+            margin: 0;
+        }
+        .x_content {
+            padding: 20px;
+        }
+        .wizard_horizontal .wizard_steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .wizard_horizontal .wizard_steps li {
+            flex: 1;
+            text-align: center;
+        }
+        .wizard_horizontal .wizard_steps li a {
+            text-decoration: none;
+            color: #73879C;
+        }
+        .wizard_horizontal .wizard_steps li .step_no {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            background: #73879C;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        /* Thay đổi màu đỏ khi active */
+        .wizard_horizontal .wizard_steps li.active .step_no {
+            background: red;
+        }
+        .wizard_steps li .step_descr {
+            display: block;
+            font-size: 14px;
+        }
+        .wizard_steps li .step_descr small {
+            font-size: 12px;
+            color: #73879C;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .label-align {
+            text-align: right;
+            padding-right: 15px;
+            font-weight: bold;
+        }
+        .form-control {
+            border: 1px solid #e6e9ed;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .bad textarea {
+            border: 1px solid #e6e9ed;
+            border-radius: 4px;
+            padding: 8px;
+        }
+        .btn-primary {
+            background: #1ABB9C;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .btn-primary:hover {
+            background: #16A085;
+        }
