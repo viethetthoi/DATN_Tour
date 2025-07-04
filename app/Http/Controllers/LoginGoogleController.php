@@ -49,7 +49,8 @@ class LoginGoogleController extends Controller
                     return redirect()->intended('/login')->with('error', 'Tài khoản đã bị khóa!!!');
                 }
                 
-            } else{
+            } 
+            else{
                     $data_google = [
                         'google_id' => $user->id,
                         'fullName' => $user->name,
@@ -58,6 +59,9 @@ class LoginGoogleController extends Controller
                         'email' => $user->email,
                         'isActive' => 'y'
                     ];
+                if($this->user->checkMail($user->email)){
+                    return redirect()->intended('/login')->with('error', 'Email đã được sử dụng!!!');
+                }
                 $this->user->register($data_google);
                 $avatar = $this->user->getUser($data_google);
                 session()->put([

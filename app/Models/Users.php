@@ -24,6 +24,12 @@ class Users extends Model
                     ->first();
     }
 
+    public function checkMail($email){
+        return DB::table($this->table)
+                    ->where('email', $email)
+                    ->exists();
+    }
+
     public function checkUserExist($userName, $email){
         return DB::table($this->table)
                     ->where('userName', '=', $userName)
